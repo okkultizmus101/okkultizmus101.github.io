@@ -11,3 +11,121 @@ body {
     background-color: rgb(17, 17, 17);
     color: white;
 }
+
+.udvozlet {
+    max-width: 1012px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+    padding: 15px;
+    border: 1px solid rgb(31, 31, 31);
+}
+
+.udvozlet p {
+    margin-top: 7px;
+}
+
+.wiki-box {
+    max-width: 500px;
+    display: inline-block;
+    border: 1px solid rgb(31, 31, 31);
+    padding: 15px;
+    margin-right: 6px;
+}
+
+.hirek-box {
+    max-width: 500px;
+    display: inline-block;
+    border: 1px solid rgb(31, 31, 31);
+    padding: 15px;
+    margin-left: 6px;
+}
+
+.kiemelt-box {
+    max-width: 1012px;
+    display: inline-block;
+    border: 1px solid rgb(31, 31, 31);
+    padding: 15px;
+    margin-top: 12px;
+}
+
+.tovabbi-oldalak {
+    max-width: 500px;
+    display: inline-block;
+    border: 1px solid rgb(31, 31, 31);
+    padding: 15px;
+    margin-right: 6px;
+}
+
+.tovabbi-oldalak a {
+    color: white;
+}
+
+.tovabbi-oldalak a:hover {
+    color: red;
+}
+
+.kulso-oldalak {
+    max-width: 500px;
+    display: inline-block;
+    border: 1px solid rgb(31, 31, 31);
+    padding: 15px;
+    margin-right: 6px;
+}
+
+.kulso-oldalak a {
+    color: white;
+}
+
+.kulso-oldalak a:hover {
+    color: red;
+}
+
+#kiemelt-poszt {
+    float: left;
+}
+
+.boxes {
+
+    max-width: 1250px;
+    margin-top: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;;
+}
+
+
+
+@media (max-width: 700px) {
+
+    .udvozlet {
+        max-width: 500px;
+    }
+
+    .wiki-box {
+        margin-top: 15px;
+        margin-right: 0px;
+    }
+    
+    .hirek-box {
+        margin-top: 15px;
+        margin-left: 0px;
+    }
+
+    .kiemelt-box {
+        margin-top: 15px;
+        max-width: 500px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .boxes {
+        margin-top: 15px;
+    }
+
+    .udvozlet {
+        margin-top: 15px;
+    }
+
+  }
