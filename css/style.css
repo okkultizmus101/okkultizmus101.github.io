@@ -12,6 +12,18 @@ body {
     color: white;
 }
 
+a {
+    color: rgb(0, 119, 255);
+}
+
+a:hover {
+    color: rgb(255, 0, 0);
+}
+
+h2 {
+    font-weight: bold;
+}
+
 .udvozlet {
     max-width: 1012px;
     text-align: center;
@@ -27,22 +39,30 @@ body {
 }
 
 .wiki-box {
-    max-width: 500px;
     display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    max-width: 500px;
     border: 1px solid rgb(31, 31, 31);
     padding: 15px;
+    overflow: hidden;
+    height: 150px;
     margin-right: 6px;
 }
 
 .hirek-box {
-    max-width: 500px;
     display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    max-width: 500px;
     border: 1px solid rgb(31, 31, 31);
     padding: 15px;
+    overflow: hidden;
+    height: 150px;
     margin-left: 6px;
 }
 
-.kiemelt-box {
+.idezet-box {
     max-width: 1012px;
     display: inline-block;
     border: 1px solid rgb(31, 31, 31);
@@ -51,10 +71,14 @@ body {
 }
 
 .tovabbi-oldalak {
-    max-width: 500px;
     display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    max-width: 500px;
     border: 1px solid rgb(31, 31, 31);
     padding: 15px;
+    overflow: hidden;
+    height: 150px;
     margin-right: 6px;
 }
 
@@ -67,11 +91,27 @@ body {
 }
 
 .kulso-oldalak {
-    max-width: 500px;
     display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    max-width: 500px;
     border: 1px solid rgb(31, 31, 31);
     padding: 15px;
-    margin-right: 6px;
+    overflow: hidden;
+    height: 150px;
+    margin-left: 6px;
+}
+
+.boxes > div {
+    font-size: 0;
+}
+
+.boxes :not(div) {
+    font-size: 1rem;
+}
+
+.oldalak {
+    margin-top: 12px;
 }
 
 .kulso-oldalak a {
@@ -82,20 +122,31 @@ body {
     color: red;
 }
 
-#kiemelt-poszt {
+#napi-idezet {
     float: left;
 }
 
 .boxes {
 
-    max-width: 1250px;
+    max-width: 1015px;
     margin-top: 12px;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;;
+    text-align: center;
 }
 
+hr {
+    height: 1px;
+    background-color: rgb(74, 74, 74);
+    border: none;
+}
 
+footer {
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
 
 @media (max-width: 700px) {
 
@@ -110,10 +161,9 @@ body {
     
     .hirek-box {
         margin-top: 15px;
-        margin-left: 0px;
     }
 
-    .kiemelt-box {
+    .idezet-box {
         margin-top: 15px;
         max-width: 500px;
         margin-left: 0;
@@ -126,6 +176,40 @@ body {
 
     .udvozlet {
         margin-top: 15px;
+    }
+
+    .wiki-box {
+        width: 100%;
+        max-width: 500px;
+        border: 1px solid rgb(31, 31, 31);
+        padding: 15px;
+    }
+
+    .hirek-box {
+        width: 100%;
+        max-width: 500px;
+        border: 1px solid rgb(31, 31, 31);
+        padding: 15px;
+        margin-right: 6px;
+        overflow: hidden;
+    }
+
+    .tovabbi-oldalak {
+        width: 100%;
+        max-width: 500px;
+        border: 1px solid rgb(31, 31, 31);
+        padding: 15px;
+        margin: 0;
+    }
+
+    .kulso-oldalak {
+        width: 100%;
+        max-width: 500px;
+        border: 1px solid rgb(31, 31, 31);
+        padding: 15px;
+        margin-right: 6px;
+        margin-top: 12px;
+        overflow: hidden;
     }
 
   }
