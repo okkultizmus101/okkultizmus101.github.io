@@ -1,0 +1,43 @@
+main {
+    padding: 30px;
+    line-height: 22px;
+    max-width: 1012px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    margin-top: 45 px;
+    margin-bottom: 10px;
+}
+
+.wiki-title {
+    color: white;
+    max-width: 350px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.wiki-tartalom {
+    margin-top: 15px;
+}
+
+.wiki-img-left {
+    float: left;
+    width: 250px;
+    padding: 20px;
+}
+
+.wiki-img-right {
+    float: right;
+    width: 250px;
+    padding: 20px;
+}
+
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
