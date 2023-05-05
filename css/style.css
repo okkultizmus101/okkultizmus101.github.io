@@ -1,3 +1,8 @@
+:root {
+    --wiki-box: 625px;
+    --hirek-box: 200px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,9 +11,14 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: rgb(17, 17, 17);
+    color: white;
+}
+
+.top-nav a {
     color: white;
 }
 
@@ -24,14 +34,25 @@ h2 {
     font-weight: bold;
 }
 
-.udvozlet {
-    max-width: 1012px;
+.mid-box {
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 12px;
-    padding: 15px;
+}
+
+.udvozlet {
     border: 1px solid rgb(31, 31, 31);
+    padding: 15px;
+    overflow: hidden;
+    margin-top: 12px;
+
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    max-width: 500px;
+    border: 1px solid rgb(31, 31, 31);
+    padding: 15px;
+    overflow: hidden;
+    margin-right: 6px;
+
 }
 
 .udvozlet p {
@@ -46,8 +67,12 @@ h2 {
     border: 1px solid rgb(31, 31, 31);
     padding: 15px;
     overflow: hidden;
-    height: 150px;
+    height: var(--wiki-box);
     margin-right: 6px;
+}
+
+.wiki-img {
+    margin-top: 10px;
 }
 
 .hirek-box {
@@ -58,16 +83,19 @@ h2 {
     border: 1px solid rgb(31, 31, 31);
     padding: 15px;
     overflow: hidden;
-    height: 150px;
+    height: var(--wiki-box);
     margin-left: 6px;
 }
 
 .idezet-box {
-    max-width: 1012px;
-    display: inline-block;
-    border: 1px solid rgb(31, 31, 31);
-    padding: 15px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 12px;
+    padding: 15px;
+    max-width: 650px;
+    border: 1px solid rgb(31, 31, 31);
+    display: inline-block;
 }
 
 .tovabbi-oldalak {
@@ -122,7 +150,7 @@ h2 {
     color: red;
 }
 
-#napi-idezet {
+#heti-idezet {
     float: left;
 }
 
@@ -142,25 +170,24 @@ hr {
 }
 
 footer {
-    max-width: 350px;
+    padding: 30px;
+    line-height: 22px;
+    max-width: 1012px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 15px;
+    text-align: center;
 }
+
 
 @media (max-width: 700px) {
 
     .udvozlet {
+        width: 100%;
         max-width: 500px;
-    }
-
-    .wiki-box {
+        border: 1px solid rgb(31, 31, 31);
+        padding: 15px;
         margin-top: 15px;
         margin-right: 0px;
-    }
-    
-    .hirek-box {
-        margin-top: 15px;
     }
 
     .idezet-box {
@@ -183,6 +210,8 @@ footer {
         max-width: 500px;
         border: 1px solid rgb(31, 31, 31);
         padding: 15px;
+        margin-top: 15px;
+        margin-right: 0px;
     }
 
     .hirek-box {
@@ -192,6 +221,9 @@ footer {
         padding: 15px;
         margin-right: 6px;
         overflow: hidden;
+        margin-top: 15px;
+        margin-left: 0px;
+        height: var(--hirek-box);
     }
 
     .tovabbi-oldalak {
@@ -210,6 +242,11 @@ footer {
         margin-right: 6px;
         margin-top: 12px;
         overflow: hidden;
+        margin-left: 0px;
+    }
+
+    .boxes {
+        max-width: 500px;
     }
 
   }
