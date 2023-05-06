@@ -11,6 +11,10 @@ h2 {
     margin-bottom: 5px;
 }
 
+li {
+    margin-left: 15px;
+}
+
 .wiki-title {
     color: white;
     max-width: 350px;
